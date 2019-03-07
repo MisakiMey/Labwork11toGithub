@@ -1,0 +1,136 @@
+Єщенко Діана
+Методи і засоби КІТ
+28.03.2019
+Оновлена версія файлу для завантаження
+
+Diana@DESKTOP-0R2N4AV MINGW64 ~/Desktop/Labwork11 (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/Diana/Desktop/Labwork11/.git/
+
+Diana@DESKTOP-0R2N4AV MINGW64 ~/Desktop/Labwork11 (master)
+$ git add ЄщенкоLab11.txt
+
+Diana@DESKTOP-0R2N4AV MINGW64 ~/Desktop/Labwork11 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   newText.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Diana@DESKTOP-0R2N4AV MINGW64 ~/Desktop/Labwork11 (master)
+$ git commit -m "first commit"
+On branch master
+Changes not staged for commit:
+        modified:   newText.txt
+
+no changes added to commit
+
+Diana@DESKTOP-0R2N4AV MINGW64 ~/Desktop/Labwork11 (master)
+$ git commit -m "Зміна
+> Додано опис виконаної роботи"
+On branch master
+Changes not staged for commit:
+        modified:   newText.txt
+
+no changes added to commit
+
+Diana@DESKTOP-0R2N4AV MINGW64 ~/Desktop/Labwork11 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   newText.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Diana@DESKTOP-0R2N4AV MINGW64 ~/Desktop/Labwork11 (master)
+$ git commit -a "Зміна
+> Додано опис виконаної роботи"
+fatal: Paths with -a does not make sense.
+
+Diana@DESKTOP-0R2N4AV MINGW64 ~/Desktop/Labwork11 (master)
+$ git remote add origin https://github.com/MisakiMey/stf.git
+fatal: remote origin already exists.
+
+Diana@DESKTOP-0R2N4AV MINGW64 ~/Desktop/Labwork11 (master)
+$ git remote add origin2 https://github.com/MisakiMey/stf.git
+fatal: remote origin2 already exists.
+
+Diana@DESKTOP-0R2N4AV MINGW64 ~/Desktop/Labwork11 (master)
+$ git push -u origin master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': MisakiMey
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/MisakiMey/Labwork11toGithub.git/'
+
+Diana@DESKTOP-0R2N4AV MINGW64 ~/Desktop/Labwork11 (master)
+$ git remote add Labwork11 https://github.com/MisakiMey/stf.git
+
+Diana@DESKTOP-0R2N4AV MINGW64 ~/Desktop/Labwork11 (master)
+$ git push -u
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+Diana@DESKTOP-0R2N4AV MINGW64 ~/Desktop/Labwork11 (master)
+$ git push -u Labwork11 master
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Username for 'https://github.com': MisakiMey
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/MisakiMey/stf.git/'
+
+Diana@DESKTOP-0R2N4AV MINGW64 ~/Desktop/Labwork11 (master)
+$ git push -u Labwork11 master
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (9/9), 919 bytes | 76.00 KiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0)
+To https://github.com/MisakiMey/stf.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'Labwork11'.
+
+Diana@DESKTOP-0R2N4AV MINGW64 ~/Desktop/Labwork11 (master)
+$ git remore add origin https://github.com/student/sample.git
+git: 'remore' is not a git command. See 'git --help'.
+
+The most similar command is
+        remote
+
+Diana@DESKTOP-0R2N4AV MINGW64 ~/Desktop/Labwork11 (master)
+$ git diff
+diff --git a/newText.txt b/newText.txt
+index e69de29..c81feb8 100644
+--- a/newText.txt
++++ b/newText.txt
+@@ -0,0 +1 @@
++12345667
+\ No newline at end of file
+
+Diana@DESKTOP-0R2N4AV MINGW64 ~/Desktop/Labwork11 (master)
+$ git add ЄщенкоLab11.txt
+
+Diana@DESKTOP-0R2N4AV MINGW64 ~/Desktop/Labwork11 (master)
+$ git status
+On branch master
+Your branch is up to date with 'Labwork11/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   newText.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Diana@DESKTOP-0R2N4AV MINGW64 ~/Desktop/Labwork11 (master)
+$ git diff --cached
